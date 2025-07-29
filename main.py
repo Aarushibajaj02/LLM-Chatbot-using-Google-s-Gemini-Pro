@@ -30,7 +30,7 @@ st.title("🚀AskGemini🚀")
 #chat history
 for message in st.session_state.chat_session.history:
     with st.chat_message(translate_role_for_streamlit(message.role)):
-        st.markdown(message.parts[0].txt)
+        st.markdown(message.parts[0].text)
 
 #ip for users' msg
 user_prompt = st.chat_input("What’s on your mind? Ask away!")
